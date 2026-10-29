@@ -313,6 +313,60 @@
 			</svg>
 			<figcaption>Adjusted scene (Step 3)</figcaption>
 		</figure>
+
+		<figure id="scene-grouped-figure">
+			<svg id="scene-grouped" viewBox="0 0 800 500" role="img" aria-labelledby="scene-grouped-title scene-grouped-desc" xmlns="http://www.w3.org/2000/svg">
+				<title id="scene-grouped-title">A little house and garden with grouped windows</title>
+				<desc id="scene-grouped-desc">The original house and garden scene with two windows made from a reusable SVG group.</desc>
+
+				<rect x="0" y="0" width="800" height="340" fill="#d9eff5" />
+				<rect x="0" y="340" width="800" height="160" fill="#9bc77a" />
+
+				<circle cx="690" cy="85" r="42" fill="#f5c84c" />
+				<ellipse cx="145" cy="105" rx="48" ry="23" fill="#fff" />
+				<ellipse cx="117" cy="111" rx="26" ry="19" fill="#fff" />
+				<ellipse cx="169" cy="113" rx="29" ry="17" fill="#fff" />
+
+				<rect x="106" y="250" width="24" height="112" fill="#805337" />
+				<circle cx="118" cy="218" r="48" fill="#4d8c50" />
+				<circle cx="87" cy="241" r="31" fill="#5b9c59" />
+				<circle cx="148" cy="243" r="32" fill="#5b9c59" />
+
+				<path d="M 366 500 C 400 450, 378 416, 415 382 C 442 358, 455 350, 468 340 L 535 340 C 516 376, 486 397, 477 430 C 468 458, 489 478, 508 500 Z" fill="#d8c79b" />
+
+				<rect x="290" y="240" width="260" height="170" fill="#f1d5a5" stroke="#76553b" stroke-width="3" />
+				<polygon points="265,248 420,125 575,248" fill="#b94e3d" stroke="#763b32" stroke-width="4" />
+				<rect x="475" y="158" width="34" height="65" fill="#a95842" stroke="#763b32" stroke-width="3" />
+				<rect x="390" y="320" width="62" height="90" fill="#76513a" stroke="#543a2d" stroke-width="3" />
+				<circle cx="438" cy="366" r="4" fill="#f4d36a" />
+
+				<!-- Grouping keeps the window frame and mullions consistent and reusable. -->
+				<defs>
+					<g id="window">
+						<rect x="0" y="0" width="35" height="30" fill="#bde5ed" stroke="#76553b" stroke-width="4" />
+						<line x1="17.5" y1="0" x2="17.5" y2="30" stroke="#76553b" stroke-width="3" />
+						<line x1="0" y1="15" x2="35" y2="15" stroke="#76553b" stroke-width="3" />
+					</g>
+				</defs>
+
+				<!-- These translations center the 35x30 windows on the original window centers. -->
+				<use href="#window" transform="translate(331.5 285)" />
+				<use href="#window" transform="translate(474.5 285)" />
+
+				<polyline points="35,390 765,390" fill="none" stroke="#f7f2df" stroke-width="7" />
+				<line x1="48" y1="370" x2="48" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="115" y1="370" x2="115" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="182" y1="370" x2="182" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="249" y1="370" x2="249" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="560" y1="370" x2="560" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="627" y1="370" x2="627" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="694" y1="370" x2="694" y2="438" stroke="#f7f2df" stroke-width="7" />
+				<line x1="761" y1="370" x2="761" y2="438" stroke="#f7f2df" stroke-width="7" />
+
+				<text x="400" y="474" text-anchor="middle" fill="#304a34" font-size="21">Home in the garden</text>
+			</svg>
+			<figcaption>Grouped windows scene (Step 4)</figcaption>
+		</figure>
 	</main>
 </body>
 </html>
